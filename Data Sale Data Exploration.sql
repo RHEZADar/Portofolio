@@ -21,7 +21,7 @@ where Person Like '%Carla%'
 Group by Person, Geography
 order by TotalAmount, TotalUnits Desc
 
---Best sals Person by Country
+--Best sales Person by Country
 Select Person, Geography, Max(cast(Amount as Int)) as TotalAmount
 From SalesProject..DataSale
 where Geography like '%Australia%'
